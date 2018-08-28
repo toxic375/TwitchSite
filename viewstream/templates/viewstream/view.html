@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ streamer }}</title>
+
+    <!-- Useless Meta -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="twitch,viewer,toxic375">
+    <meta name="description" content="An embedded Twitch viewer for Toxic375's favorite streamers. This was used as a Django learning project.">
+    <meta name="revised" content="27Aug2018">
+</head>
+<body>
+ 
+    <!-- Display Twitch video -->
+    <div id="twitch-embed"></div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts below this line -->
+
+
+        <!-- Twitch embed script -->
+            <!-- 
+                channel: specify which channel to display
+                layout: video or video-with-chat (defaults to video-with-chat)
+
+                !! will post video to "twitch-embed" div !!
+             -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+              new Twitch.Embed("twitch-embed", {
+                width: 854,
+                height: 480,
+                channel: "tyriss",
+                layout: "video",
+                autoplay: true,
+              });
+            </script>
+        <!-- -------------------- -->
+
+
+</body>
+</html>
